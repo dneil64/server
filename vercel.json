@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "api/server.rs",
+      "use": "@vercel/rust"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/server.rs"
+    }
+  ]
+}
